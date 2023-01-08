@@ -1,0 +1,23 @@
+<h1 class="edit">Editing Book</h1>
+<div class="edit_errors">
+  <% if @book.errors.any? %>
+    <p class="edit_errors_title"> <%= @book.errors.count %> errors prohibted this book from being saved:</p>
+    <ul class="edit_errors_ul">
+      <% @book.errors.full_messages.each do |message| %>
+        <li class="edit_errors_li"><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
+<%= form_with model: @book do |f| %>
+  <p class="edit">Title</p>
+  <p class="edit edit_body"><%= f.text_field:title %></p>
+  
+  <p class="edit">Body</p>
+  <p class="edit edit_body"><%= f.text_area:body %></p>
+  <div class="edit edit_body"><%= f.submit'Update Book' %></div>
+  <div class=edit_button>
+    <p class="edit edit_show"><%= link_to"Show", book_path(@book.id) %></p>
+    <p class="edit edit_back"><%= link_to"Back", books_path %></p>
+  </div>
+<% end %>

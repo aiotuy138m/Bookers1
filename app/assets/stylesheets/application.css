@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top_head {
+  margin: 20px 0 0 20px;
+}
+
+.top {
+  margin: 30px 0 0 100px;
+}
+
+.delete_success {
+  margin: 30px 30px 0 90px;
+  color: green;
+}
+
+.index {
+  margin: 20px 0 0 50px;
+}
+
+.new_book {
+  margin-bottom: 15px;
+}
+
+.new {
+  margin:0 0 0 50px;
+}
+
+.button {
+  padding: 10px;
+}
+
+.body {
+  padding-left: 5px; 
+}
+
+.create_success {
+  margin: 30px 30px 0 90px;
+  color: green;
+}
+
+.edit {
+  margin: 20px 0 0 50px;
+}
+.edit_button {
+  display: flex;
+  margin: 10px 0 0 50px;
+}
+
+
+.edit_title {
+  margin-top: 20px; 
+}
+
+.edit_show {
+  margin: 0 10px 0 0;
+  
+}
+
+.edit_back {
+  margin: 0;
+  border-left: 2px solid;
+  padding: 0 0 0 10px;
+}
+
+.edit_body {
+  margin-top: 0;
+}
+
+.show_title {
+  display: flex;
+  margin: 30px 0 0 90px; 
+}
+
+.show_body {
+  display: flex;
+  margin: 30px 0 30px 90px;
+}
+
+.show_text {
+  font-weight: bold;
+}
+
+.show_button {
+  display: flex;
+  margin-left: 50px;
+}
+
+.show_edit {
+  margin: 0 10px 0 0;
+}
+
+.show_back {
+  margin: 0;
+  border-left: 2px solid;
+  padding: 0 0 0 10px;
+}
+
+
+.edit_errors_ul {
+  margin-left: 50px;
+  width: 500px;
+  height: 100px;
+}
+
+.edit_errors_title {
+  color: #fff;
+  background-color: red;
+  width: 500px;
+  margin-left: 50px;
+  padding-left: 30px;
+}
+
+.edit_errors_li {
+  margin: 10px 90px;
+  list-style: disc;
+}
+
+.field_with_errors {
+  margin-left: 50px;
+  border:3px solid red;
+  width: fit-content;
+}

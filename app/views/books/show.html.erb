@@ -1,0 +1,15 @@
+<div class="create_success"><%= flash[:notice] %></div>
+
+<div class="show_title">
+  <p class="show_text">Title:</p>
+  <p><%= @book.title %></p>
+</div>
+<div class="show_body">
+  <p class="show_text">Body:</p>
+  <p><%= @book.body %></p>
+</div>
+
+<div class="show_button">
+<p class="show_edit"><%= link_to"Edit",edit_book_path(@book.id) %></p>
+<p class="show_back"><%= link_to"Back",books_path %></p>
+</div>
