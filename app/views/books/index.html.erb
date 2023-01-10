@@ -22,11 +22,11 @@
 
 <!--新規投稿画面-->
 <h2 class="index new_book">New book</h2>
-<% if @book.errors.any? %>
-  <%= @book.errors.count %>errors prohibited thid book from being saved:
-  <ul>
+<div class="index_errors"><% if @book.errors.any? %></div>
+  <p class="index_errors_title"><%= @book.errors.count %>　errors prohibited thid book from being saved:</p>
+  <ul class="index_errors_ul">
     <% @book.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+      <li class="index_errors_li"><%= message %></li>
     <% end %>
   </ul>
 <% end %>
